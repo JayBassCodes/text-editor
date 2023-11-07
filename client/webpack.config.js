@@ -40,7 +40,7 @@ module.exports = () => {
         start_url: '/',
         icons: [
           {
-            src: path.resolve('src/assets/icon.png'),
+            src: path.resolve('src/images/icon.png'),
             sizes: [96, 128, 192, 256, 384, 512],
           },
         ],
