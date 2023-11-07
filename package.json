@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start:dev": "webpack-dev-server --open --mode development",
-    "start": "npm run build && node server.js",
+    "start": "npm run build && cd server && node server.js",
     "server": "cd server && nodemon server.js",
     "build": "cd client && npm run build",
     "install": "cd client && npm install",
