@@ -22,9 +22,8 @@ module.exports = () => {
     },
     plugins: [
       new HtmlWebpackPlugin({
-        template: './src/index.html',
-        chunks: ['main'],
-        filename: 'index.html',
+        template: './index.html',
+        title: 'Jate',
       }),
       new InjectManifest({
         swSrc: './src-sw.js',
@@ -32,16 +31,19 @@ module.exports = () => {
       }),
       new WebpackPwaManifest({
         fingerprints: false,
+        inject: true,
         name: 'Jate',
         short_name: 'Jate',
         description: 'A simple text editor',
         background_color: '#ffffff',
         theme_color: '#ffffff',
         start_url: '/',
+        display: 'standalone',
         icons: [
           {
-            src: path.resolve('src/assets/icon.png'),
+            src: path.resolve('src/images/icon.png'),
             sizes: [96, 128, 192, 256, 384, 512],
+            destination: path.join('assets', 'icons'),
           },
         ],
       }),
