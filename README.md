@@ -11,3 +11,5 @@ To install this app, clone the repo and run `npm install` to install the depende
 To use this app, run `npm run start` in the command line. The app will prompt the user to select an action from a list of options. The user can then create a new file, save a file, or open a file. The user can also exit the app by selecting the exit option.
 
 ## Screenshots
+
+![image](https://github.com/JayBassCodes/text-editor/assets/132828489/ff518cb2-9166-4786-80a1-84d4195f1960)
