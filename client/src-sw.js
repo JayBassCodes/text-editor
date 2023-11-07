@@ -45,3 +45,5 @@ registerRoute(
   );
 
 registerRoute();
+
+offlineFallback();
